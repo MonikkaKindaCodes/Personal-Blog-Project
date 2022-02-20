@@ -36,3 +36,36 @@
         }
     }
 }
+
+.post__header {
+    text-align: center;
+    padding-top: 10rem;
+    background-color: $headerBackgroundColor;
+    color: $headerTitleColor;
+    margin-bottom: 4rem;
+}
+
+.post__title {
+    font-size: $mainTitleSize;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 3rem;
+}
+
+.post__navOne {
+    font-size: $baseLinkSize;
+    display: flex;
+    justify-content: space-around;
+    &--link {
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $headerBackgroundColor;
+        color: $baseLinkColor;
+        padding: 4rem 0;
+        letter-spacing: .4rem;
+        &:hover {
+            font-size: 2rem;
+            transition: .3s ease-in;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.post__main {
+    &--title {
+        @include secondaryHeading;
+    }
+
+    &--photo {
+        max-width: 90%;
+        margin: 6rem auto;
+        border-radius: 2rem;
+        border: 2rem solid $headerBackgroundColor;
+    }
+
+    &--container {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    &--description {
+        font-size: $postDescriptionFontSize;
+        line-height: 1.5;
+        margin-bottom: 5rem;
+    }
+
+    &--article {
+        font-size: $baseFontSize;
+        margin-bottom: 6rem;
+
+        & li {
+            list-style: square;
+            line-height: 1.8;
+        }
+        
+    }
+
+    &--about {
+        max-width: 40%;
+        border: 1rem solid $headerBackgroundColor;
+        border-radius: 1rem;
+        background-color: $upcomingTitleBackgroundColor;
+        color: $upcomingTitleColor;
+        margin: 5rem auto;
+        text-align: center;
+        padding: 3.5rem;
+
+        &Title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            text-decoration: underline;
+
+        }
+
+        &Photo {
+            max-width: 50%;
+            border: .5rem solid $headerBackgroundColor;
+            margin-bottom: 3rem;
+        }
+
+        &Name {
+          font-size: 2rem;
+          margin-bottom: .5rem;
+        }
+
+        &Company {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            &Span {
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+
+        &Description {
+            font-size: 1.7rem;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+    }
+}

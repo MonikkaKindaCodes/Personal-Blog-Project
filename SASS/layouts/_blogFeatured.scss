@@ -1,21 +1,26 @@
 .blog__featured {
     margin-bottom: 10rem;
+    border: .5rem solid $secondaryTitleBackgroundColor;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
     &--title {
         @include secondaryHeading;
     }
     
     &--photo {
-        max-width: 90%;
+        max-width: 80%;
         margin: 0 auto;
         border-radius: 10rem;
-        border: 1.5rem solid $headerBackgroundColor;
+        border: 1.3rem solid $headerBackgroundColor;
     }
     
     &--description {
         color: $baseColor;
-        max-width: 60%;
+        max-width: 70%;
         line-height: 1.7;
-        font-size: 4rem;
+        font-size: 3.5rem;
         
         &Header{
             font-size: 4.2rem;
