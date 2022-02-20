@@ -1,0 +1,11 @@
+{
+  "name": "randomfacts",
+  "version": "1.0.0",
+  "description": "Random Facts Blog",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

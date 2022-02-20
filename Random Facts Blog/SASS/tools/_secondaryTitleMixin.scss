@@ -1,0 +1,13 @@
+@mixin secondaryHeading {
+    color: $secondaryTitleColor;
+    font-size: $secondaryTitleSize;
+    padding: 2.5rem;
+    background-color: $secondaryTitleBackgroundColor;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 5rem auto;
+    font-weight: 300;
+    max-width: 60%;
+    border-radius: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+.blog__featured {
+    margin-bottom: 10rem;
+    &--title {
+        @include secondaryHeading;
+    }
+    
+    &--photo {
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 10rem;
+        border: 1.5rem solid $headerBackgroundColor;
+    }
+    
+    &--description {
+        color: $baseColor;
+        max-width: 60%;
+        line-height: 1.7;
+        font-size: 4rem;
+        
+        &Header{
+            font-size: 4.2rem;
+            letter-spacing: .3rem;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        &Link {
+            color: $featuredLinkColor;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+    

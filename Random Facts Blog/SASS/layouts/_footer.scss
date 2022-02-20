@@ -1,0 +1,22 @@
+.blog__footer {
+    text-align: center;
+    background-color: $headerBackgroundColor;
+}
+
+.blog__navTwo {
+    font-size: $baseFooterLinkSize;
+    display: flex;
+    justify-content: space-around;
+    &--link {
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $headerBackgroundColor;
+        color: $baseLinkColor;
+        padding: 4rem 0;
+        letter-spacing: .4rem;
+        &:hover {
+            font-size: 1.7rem;
+            transition: .3s ease-in;
+        }
+    }
+}

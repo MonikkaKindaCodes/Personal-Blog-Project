@@ -1,0 +1,30 @@
+.blog__reviews {
+    &--title {
+        @include secondaryHeading;
+    }
+    
+    &--description {
+        font-size: $secondaryDescriptionSize;
+        font-weight: 400;
+        text-align: center;
+        margin: 5rem auto;
+    }
+}
+
+.blog__review {
+    background-color: $reviewBackgroundColor; 
+    max-width: 70%;
+    color: $reviewColor;
+    font-size: $reviewFontSize;
+    border-radius: 1rem;
+    padding: 5rem;
+    margin: 5rem auto;
+    &--text {
+        line-height: 1.6;
+        max-width: 100%;
+        font-weight: 300;
+    }
+    &--reviewer {
+        font-weight: 500;
+    }
+}

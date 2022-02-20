@@ -1,0 +1,31 @@
+.blog__side {
+
+    &--title {
+        @include upcomingTitle;
+        margin-bottom: 4rem;
+        font-weight: 300;
+    }
+
+    &--description {
+        font-size: $baseFontSize;
+        margin-bottom: 4rem;
+        font-weight: 400;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    &--titles {
+        font-size: $baseFontSize;
+        list-style: none;
+        text-align: center; 
+        background-color: $upcomingTitleBackgroundColor;
+        border-radius: 2rem;
+
+        & li {
+            margin-bottom: 3rem;
+            color: $upcomingTitleColor;
+            padding: 1.5rem;
+        }
+    }
+
+}
