@@ -278,5 +278,146 @@
   }
 }
 
-@media (min-width: 601) and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
+  .blog {
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "side"
+      "footer";
+
+    &__header {
+      grid-area: header;
+    }
+
+    &__title {
+      margin-bottom: 6rem;
+
+      &--description {
+        margin-bottom: 6rem;
+      }
+    }
+
+    &__navOne {
+      grid-area: header;
+
+      &--link {
+        grid-area: header;
+        padding: 2rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__featured {
+      border: none;
+      grid-area: main;
+      display: grid;
+      grid-template-areas:
+        "title"
+        "photo"
+        "description";
+
+      &--title {
+        grid-area: title;
+        max-width: 90%;
+        font-size: 3.5rem;
+        font-weight: 400;
+      }
+
+      &--photo {
+        grid-area: photo;
+        max-width: 90%;
+      }
+
+      &--description {
+        grid-area: description;
+        font-size: 2.3rem;
+        margin: 0 auto;
+        line-height: 1.7;
+
+        &Header {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    &__reviews {
+      grid-area: main;
+    }
+
+    &__side {
+      grid-area: side;
+
+      &--title,
+      &--signUpTitle {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      &--description {
+        text-transform: uppercase;
+        margin: 5rem auto;
+      }
+
+      &--titles {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      &--signUpFormButton {
+        margin-bottom: 7rem;
+      }
+    }
+  }
+
+  .post {
+    padding: 0;
+
+    &__title {
+      font-size: 5rem;
+      letter-spacing: 0.9rem;
+    }
+
+    &__navOne {
+      font-size: 2rem;
+      padding: 2rem;
+    }
+
+    &__main {
+      &--title {
+        max-width: 90%;
+        font-size: 4.3rem;
+        font-weight: 400;
+      }
+
+      &--photo {
+        max-width: 75%;
+      }
+
+      &--description {
+        line-height: 1.7;
+        font-size: 3rem;
+      }
+
+      &--article {
+        font-size: 2.4rem;
+
+        & li {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 10rem;
+          }
+        }
+      }
+
+      &--about {
+        max-width: 70%;
+        margin-bottom: 15rem;
+      }
+    }
+  }
 }
