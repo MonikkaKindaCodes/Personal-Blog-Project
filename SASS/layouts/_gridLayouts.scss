@@ -1,289 +1,282 @@
 .blog {
-    @include backgroundSetup;
-    grid-template-areas: 
+  @include backgroundSetup;
+  grid-template-areas:
     "header header"
     "main side"
     "main side"
     "footer footer";
 
-    &__header {
-        grid-area: header;
+  &__header {
+    grid-area: header;
+  }
+
+  &__navOne {
+    grid-area: header;
+  }
+
+  &__main {
+    grid-area: main;
+  }
+
+  &__featured {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "photo description";
+    grid-gap: 5rem;
+
+    &--title {
+      grid-area: title;
     }
 
-    &__navOne {
-        grid-area: header;
+    &--photo {
+      grid-area: photo;
     }
 
-    &__main {
-        grid-area: main;
+    &--description {
+      grid-area: description;
+    }
+  }
+
+  &__reviews {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "description description"
+      "review review";
+
+    &--title {
+      grid-area: title;
     }
 
-    &__featured {
-        display: grid;
-        grid-template-areas: 
-        "title title"
-        "photo description";
-        grid-gap: 5rem;
-
-        &--title {
-            grid-area: title;
-        }
-
-        &--photo {
-            grid-area: photo;
-        }
-
-        &--description {
-            grid-area: description;
-        }
-
+    &--description {
+      grid-area: description;
     }
 
-    &__reviews {
-        display: grid;
-        grid-template-areas:
-        "title title"
-        "description description"
-        "review review";
-
-        &--title {
-            grid-area: title;
-        }
-
-        &--description {
-            grid-area: description;
-        }
-
-        &--container {
-            grid-area: review;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
+    &--container {
+      grid-area: review;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
+  }
 
-    &__side {
-        grid-area: side;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+  &__side {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
-    &__footer {
-        grid-area: footer;
-    }
+  &__footer {
+    grid-area: footer;
+  }
 }
 
 .post {
-    @include backgroundSetup;
-    grid-template-areas:
+  @include backgroundSetup;
+  grid-template-areas:
     "header"
     "main"
     "footer";
 
-    &__header {
-        grid-area: header;
+  &__header {
+    grid-area: header;
+  }
+
+  &__main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+      "title"
+      "photo"
+      "description"
+      "article";
+
+    &--title {
+      grid-area: title;
     }
 
-    &__main {
-        grid-area: main;
-        display: grid;
-        grid-template-areas:
-        "title"
-        "photo"
-        "description"
-        "article";
-
-        &--title {
-            grid-area: title;
-        }
-
-        &--photo {
-            grid-area: photo;
-        }
-
-        &--description {
-            grid-area: description;
-        }
-
-        &--article {
-            grid-area: article;
-        }
-
+    &--photo {
+      grid-area: photo;
     }
 
-    &__footer {
-        grid-area: footer;
+    &--description {
+      grid-area: description;
     }
+
+    &--article {
+      grid-area: article;
+    }
+  }
+
+  &__footer {
+    grid-area: footer;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .blog {
+  .blog {
     padding: 0;
     text-align: center;
-    grid-template-areas: 
-    "header"
-    "main"
-    "side"
-    "footer";
+    grid-template-areas:
+      "header"
+      "main"
+      "side"
+      "footer";
 
     &__header {
-        grid-area: header;
+      grid-area: header;
     }
 
     &__title {
-        grid-area: heading;
-        &--description {
-            font-size: 3rem;
-
-        }
+      grid-area: heading;
+      &--description {
+        font-size: 3rem;
+      }
     }
 
     &__navOne {
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
 
-        &--link {
-            font-size: 2.5rem;
-        }
+      &--link {
+        font-size: 2.5rem;
+      }
     }
 
     &__featured {
-        grid-area: main;
-        display: grid;
-        grid-template-areas:
+      grid-area: main;
+      display: grid;
+      grid-template-areas:
         "title"
         "photo"
         "description";
 
-        &--title {
-            grid-area: title;
-            font-size: 4rem;
-            max-width: 90%;
+      &--title {
+        grid-area: title;
+        font-size: 4rem;
+        max-width: 90%;
+      }
+
+      &--photo {
+        grid-area: photo;
+        max-width: 90%;
+      }
+
+      &--description {
+        grid-area: description;
+        font-size: 3rem;
+        margin: 0 auto;
+        max-width: 90%;
+
+        &Header {
+          font-size: 3.5rem;
         }
-
-        &--photo {
-            grid-area: photo;
-            max-width: 90%;
-        }
-
-        &--description {
-            grid-area: description;
-            font-size: 3rem;
-            margin: 0 auto;
-            max-width: 90%;
-
-            &Header {
-                font-size: 3.5rem;
-            }
-        }
-
+      }
     }
 
     &__reviews {
-        grid-area: main;
-        display: grid;
-        grid-template-areas: 
+      grid-area: main;
+      display: grid;
+      grid-template-areas:
         "title"
         "description"
         "review";
 
-        &--title {
-            grid-area: title;
-            max-width: 90%;
-            font-size: 3rem;
-        }
+      &--title {
+        grid-area: title;
+        max-width: 90%;
+        font-size: 3rem;
+      }
 
-        &--description {
-            grid-area: description;
-        }
-
+      &--description {
+        grid-area: description;
+      }
     }
 
     &__side {
-        margin-bottom: 4rem;
-        &--title {
-            width: 80%;
-            margin: 0 auto;
-            line-height: 1.5;
-        }
+      margin-bottom: 4rem;
+      &--title {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
 
-        &--description {
-            font-size: 1rem;
-        }
+      &--description {
+        font-size: 1rem;
+      }
 
-        &--titles {
-            width: 80%;
-            margin: 5rem auto;
-            font-weight: 300;
-        }    
+      &--titles {
+        width: 80%;
+        margin: 5rem auto;
+        font-weight: 300;
+      }
     }
 
     &__navTwo {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-        &--link {
-            font-size: 2.5rem;
-        }
+      &--link {
+        font-size: 2.5rem;
+      }
     }
-    
-}
+  }
 
-.post {
+  .post {
     padding: 0;
 
     &__navOne {
-        display: flex;
-        flex-direction: column;
-        padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5rem;
 
-        &--link {
-            font-size: 2.5rem;
-        }
+      &--link {
+        font-size: 2.5rem;
+      }
     }
 
     &__main {
+      &--title {
+        font-size: 3rem;
+        max-width: 90%;
+      }
 
-        &--title {
-            font-size: 3rem;
-            max-width: 90%;
+      &--photo {
+        border: 1rem solid $headerBackgroundColor;
+        max-width: 80%;
+      }
+
+      &--description {
+        font-size: 2.2rem;
+        line-height: 1.9;
+      }
+
+      &--article {
+        font-size: 2.2rem;
+
+        & li {
+          padding: 1.5rem;
         }
+      }
 
-        &--photo {
-            border: 1rem solid $headerBackgroundColor;
-            max-width: 80%;
-        }
-
-        &--description {
-            font-size: 2.2rem;
-            line-height: 1.9;
-        }
-
-        &--article {
-            font-size: 2.2rem;
-
-            & li {
-                padding: 1.5rem;
-            }
-        }
-
-        &--about {
-            max-width: 100%;
-        }
+      &--about {
+        max-width: 100%;
+      }
     }
-
 
     &__navTwo {
-        flex-direction: column;
+      flex-direction: column;
 
-        &--link {
-            font-size: 2.5rem;
-        }
+      &--link {
+        font-size: 2.5rem;
+      }
     }
-    
+  }
 }
+
+@media (min-width: 601) and (max-width: 1100px) {
 }
