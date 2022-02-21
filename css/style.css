@@ -443,7 +443,7 @@
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .blog {
     padding: 0;
     display: grid;
@@ -549,6 +549,67 @@
   .post__main--about {
     max-width: 70%;
     margin-bottom: 15rem;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .blog__title {
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    margin-bottom: 3rem;
+  }
+  .blog__title--description {
+    font-size: 5rem;
+    margin-bottom: 6rem;
+  }
+  .blog__navOne {
+    font-size: 3.5rem;
+  }
+  .blog__featured {
+    padding-bottom: 7rem;
+  }
+  .blog__navTwo {
+    font-size: 3.5rem;
+  }
+
+  .post__title {
+    font-size: 7rem;
+    letter-spacing: 1.5rem;
+  }
+  .post__navOne {
+    font-size: 3rem;
+  }
+  .post__main--title {
+    font-size: 6rem;
+    font-weight: 400;
+    padding: 5rem;
+  }
+  .post__main--description {
+    font-size: 4rem;
+    line-height: 2;
+  }
+  .post__main--article {
+    font-size: 3.5rem;
+  }
+  .post__main--article li {
+    margin-bottom: 2rem;
+  }
+  .post__main--article li:last-child {
+    margin-bottom: 15rem;
+  }
+  .post__main--about {
+    margin-bottom: 10rem;
+  }
+  .post__main--aboutTitle {
+    font-size: 5rem;
+  }
+  .post__main--aboutName, .post__main--aboutCompany {
+    font-size: 3rem;
+  }
+  .post__main--aboutDescription {
+    font-size: 2.7rem;
+  }
+  .post__navTwo {
+    font-size: 3.5rem;
   }
 }
 .blog__reviews--title {
