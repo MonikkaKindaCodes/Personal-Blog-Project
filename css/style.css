@@ -433,9 +433,6 @@
   .post__main--article li {
     padding: 1.5rem;
   }
-  .post__main--about {
-    max-width: 100%;
-  }
   .post__navTwo {
     flex-direction: column;
   }
